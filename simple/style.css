@@ -1,0 +1,171 @@
+/* 
+    Document   : style
+    Created on : 22 janv. 2013, 17:23:22
+    Author     : Alex
+    Description: stylesheet for simple portfolio project
+        
+*/
+
+/* Google fonts */
+@import url("http://fonts.googleapis.com/css?family=Pacifico");
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+
+/* css reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* general */
+body{
+    width: 900px;
+    margin: auto;
+    font: 10px/1.0 'Droid Sans', sans-serif;
+}
+
+.spacer{
+    clear:both;
+    height: 0;
+}
+
+/* main header */
+header#main{
+    width: 100%;
+}
+
+header#main h1{
+    font: 60px 'Pacifico', cursive;
+}
+
+
+/* nav */
+nav{
+    width: 100%;
+    margin-top: 15px;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 10px;
+    background: #999;
+    color: #fff;
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    
+    box-shadow: 3px 3px 4px #333;
+}
+
+nav li{
+    display: inline;
+    padding-right: 10px;
+    font-size: 1.2em;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    padding: 5px;
+    
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;    
+}
+
+nav a:hover{
+    background: #333;
+    color: #999;
+}
+
+/* sections & articles */
+
+section{
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+section h1{
+    font: 38px 'Pacifico', cursive;
+}
+section h2{
+    font-size: 14px;
+    font-style: italic;
+}
+
+section article{
+    /*display: inline-block; can't use because creates whitespace...*/
+    width: 290px;
+    margin: 15px 0 0 0;
+    height: 200px;
+    padding: 0;
+    margin-right: 15px;
+    float: left;/*traditionnal solution for aligning blocks...*/
+}
+
+section article.last{
+    margin-right: 0px;
+}
+
+article img{
+    float: left;
+}
+
+article ul{
+    position: absolute;
+    list-style-type: none;
+    padding: 0;
+    background: #000;
+    opacity: 0.6;
+    color: white;
+    margin-top: 140px;
+    height: 40px;
+    width: 270px;
+    font-size: 1.2em;
+    padding: 10px;
+    line-height: 1.3em;
+}
+
+article ul a{
+    color: white;
+    text-decoration: none;
+}
+
+article ul a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+section#about img{
+    float:left;
+    opacity: 0.7;
+    
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+section#about img:hover{
+    opacity: 1;
+}
+
+section#about aside{
+    margin-left: 25px;
+    font-size: 1.2em;
+    float: left;
+    width: 300px;
+    line-height: 1.2em;
+}
+
+section#about aside p{
+    margin-bottom: 10px;
+}
+
+
+/* footer */
+footer{
+    margin-top: 30px;
+    font-size: 1.2em;
+}
