@@ -28,30 +28,29 @@ body{
 /* main header */
 header#main{
     width: 100%;
+    height: 100px;
+    border-bottom: solid 10px #ccc;
+    margin-top: 30px;
 }
 
 header#main h1{
-    font: 60px 'Pacifico', cursive;
+    font: 48px 'Pacifico', cursive;
+    float: left;
+    width: 600px;
 }
-
 
 /* nav */
 nav{
-    width: 100%;
+    text-align: right;
     margin-top: 15px;
+    float: right;
+    color: #000;
+    width: 300px;
+    margin-top: 50px;
 }
 
 nav ul{
     list-style-type: none;
-    padding: 10px;
-    background: #999;
-    color: #fff;
-    
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    
-    box-shadow: 3px 3px 4px #333;
 }
 
 nav li{
@@ -61,14 +60,16 @@ nav li{
 }
 
 nav a{
-    color: #fff;
+    color: #000;
     text-decoration: none;
 
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     border-radius: 10px;
     
-    padding: 5px;
+    background: #ccc;
+    
+    padding: 10px;
     
     -moz-transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -77,7 +78,7 @@ nav a{
 
 nav a:hover{
     background: #333;
-    color: #999;
+    color: #fff;
 }
 
 /* sections & articles */
@@ -163,6 +164,10 @@ section#about aside p{
     margin-bottom: 10px;
 }
 
+section#about h3{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
 
 /* footer */
 footer{
