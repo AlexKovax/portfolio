@@ -1,0 +1,191 @@
+/* 
+    Document   : style
+    Created on : 22 janv. 2013, 17:23:22
+    Author     : Alex
+    Description: stylesheet for simple portfolio project
+        
+*/
+
+/* Google fonts */
+@import url("http://fonts.googleapis.com/css?family=Pacifico");
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans:400,700");
+
+/* css reset */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* general */
+body{
+    width: 69%;
+    margin: auto;
+    font: 10px/1.0 'Droid Sans', sans-serif;
+}
+
+.spacer{
+    clear:both;
+    height: 0;
+}
+
+/* main header */
+header#main{
+    width: 100%;
+    height: 90px;
+    border-bottom: solid 10px #ccc;
+    margin-top: 30px;
+}
+
+header#main h1{
+    font: 6em 'Pacifico', cursive;
+    float: left;
+    width: 60%;
+}
+
+header#main h1:hover{
+    font: 6em 'Pacifico', cursive;
+    float: left;
+    width: 60%;
+    
+    -moz-opacity: 0.7;
+    -webkit-opacity: 0.7;
+    opacity: 0.7;
+}
+
+/* nav */
+nav{
+    text-align: right;
+    margin-top: 15px;
+    float: right;
+    color: #000;
+    width: 30%;
+    margin-top: 60px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    display: inline;
+    padding-left: 3%;
+    font-size: 1.2em;
+}
+
+nav a{
+    color: #000;
+    text-decoration: none;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    background: #ccc;
+    
+    padding: 10px;
+    
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;    
+}
+
+nav a:hover{
+    background: #333;
+    color: #fff;
+}
+
+/* sections & articles */
+
+section{
+    width: 100%;
+    margin: 30px 0 0 0;
+}
+
+section h1{
+    font: 3.8em 'Pacifico', cursive;
+}
+section h2{
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+section article{
+    /*display: inline-block; can't use because creates whitespace...*/
+    width: 32%;
+    margin: 15px 0 0 0;
+    padding: 0;
+    margin-right: 2%;
+    float: left;/*traditionnal solution for aligning blocks...*/
+    background: #000;
+}
+
+section article.last{
+    margin-right: 0px;
+}
+
+article img{
+    max-width: 100%;
+    width: 100%;
+}
+
+article ul{
+    list-style-type: none;
+    background: #000;
+    color: white;
+    height: 30%;
+    width: 100%;
+    font-size: 1.2em;
+    line-height: 1.3em;
+    margin: 5px 0;
+}
+
+article li{
+    padding: 0 3%;
+    margin: 0;
+}
+
+article ul a{
+    color: white;
+    text-decoration: none;
+}
+
+article ul a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+section#about img{
+    float:left;
+    opacity: 0.7;
+    max-width: 100%;
+    
+    width: 66%;
+    
+    -moz-transition: opacity 0.2s ease-in-out;
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+section#about img:hover{
+    opacity: 1;
+}
+
+section#about aside{
+    margin-left: 3%;
+    font-size: 1.2em;
+    float: right;
+    width: 31%;
+    line-height: 1.2em;
+}
+
+section#about aside p{
+    margin-bottom: 10px;
+}
+
+section#about h3{
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+/* footer */
+footer{
+    margin-top: 30px;
+    font-size: 1.2em;
+}
