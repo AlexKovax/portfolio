@@ -108,6 +108,7 @@ section article{
     padding: 0;
     float: left;/*traditionnal solution for aligning blocks...*/
     background: #000;
+    position: relative;
 }
 
 section article.last{
@@ -123,11 +124,15 @@ article ul{
     list-style-type: none;
     background: #000;
     color: white;
-    height: 30%;
+    height: 29%;
+    padding-top: 1%;
     width: 100%;
     font-size: 1.2em;
     line-height: 1.3em;
-    margin: 5px 0;
+    margin: 0;
+    position: absolute;
+    top: 70%;
+    opacity: 0.8;
 }
 
 article li{
